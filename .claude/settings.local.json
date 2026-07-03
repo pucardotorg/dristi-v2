@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem \"D:\\\\kamba\\\\deltaxy\\\\pucar\\\\drishti2-handoff\" -Recurse -Depth 2)",
+      "Bash(Select-Object FullName, Length)",
+      "PowerShell(Get-ChildItem \"D:\\\\DeltaXY-AI\\\\pucar-drishti-v2\" -Recurse -Depth 3 | Where-Object { !$_.PSIsContainer } | Select-Object FullName, Length)",
+      "WebSearch",
+      "WebFetch(domain:orm.drizzle.team)",
+      "WebFetch(domain:neon.com)",
+      "WebFetch(domain:github.com)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\DeltaXY-AI\\\\pucar-drishti-v2\" -Recurse -Directory | Where-Object { $_.Name -match \"^\\(auth|api|lib|src|app\\)$\" } | Sort-Object -Unique)",
+      "Bash(powershell -Command \"\\(Get-Content 'Case Filing 2.0 _standalone_.html' -Raw\\) -match '\\(?i\\)advocate' | Write-Host\")",
+      "Bash(powershell *)",
+      "PowerShell($content = Get-Content 'D:\\\\kamba\\\\deltaxy\\\\pucar\\\\Case Filing 2.0 _standalone_.html' -Raw; [regex]::Matches\\($content, '\\(?i\\)advocate|page'\\) | Select-Object -ExpandProperty Value | Sort-Object | Get-Unique)",
+      "PowerShell($content = Get-Content 'D:\\\\kamba\\\\deltaxy\\\\pucar\\\\Case Filing 2.0 _standalone_.html' -Raw; $matches = [regex]::Matches\\($content, '.{0,50}\\(?i\\)bar.{0,50}'\\); $matches | Select-Object -ExpandProperty Value | Select-Object -First 10)",
+      "Bash(python3 -c \"import json, sys; data = json.load\\(sys.stdin\\); print\\(data[:10000]\\)\")",
+      "Bash(dir D:\\\\DeltaXY-AI\\\\pucar-drishti-v2\\\\app\\\\\\(auth\\) *)",
+      "Bash(node -e \"require\\('better-auth/cookies'\\)\")",
+      "Bash(pnpm exec *)",
+      "Bash(node -e \"const {getSessionCookie} = require\\('better-auth/cookies'\\); console.log\\(typeof getSessionCookie\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(Get-ChildItem -Path \"D:\\\\DeltaXY-AI\\\\pucar-drishti-v2\\\\src\\\\components\\\\shell\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object -ExpandProperty Name)",
+      "Bash(Get-ChildItem -Path \"D:\\\\DeltaXY-AI\\\\pucar-drishti-v2\" -Recurse -Name)",
+      "Bash(Select-Object -First 50)",
+      "Bash(Get-ChildItem *)",
+      "Bash(xargs grep -l \"react-day-picker\\\\|react-datepicker\")"
+    ]
+  }
+}

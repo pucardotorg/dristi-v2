@@ -1,0 +1,30 @@
+[
+  {
+    "external_filing_id": "APP-123",
+    "court_code": "HRPK02",
+    "complainant_name": "ABC TRADERS",
+    "complainant_local_name": "एबीसी ट्रेडर्स",
+    "complainant_address": "Shop No. 1, Panchkula",
+    "complainant_local_address": "दुकान नं. 1, पंचकूला",
+    "complainant_mobile": "9999999999",
+    "complainant_age": "35",
+
+    "accused_name": "RAJ KUMAR",
+    "accused_local_name": "राज कुमार",
+    "accused_address": "House No. 2, Panchkula",
+    "accused_local_address": "मकान नं. 2, पंचकूला",
+    "accused_mobile": "8888888888",
+    "accused_age": "40",
+
+    "cheque_amount": "100000",
+    "cheque_number": "123456",
+    "cheque_date": "01-06-2026",
+    "dishonour_date": "05-06-2026",
+    "cause_of_action_date": "05-06-2026",
+
+    "cause_of_action": "Cheque dishonoured due to insufficient funds.",
+    "local_cause_of_action": "पर्याप्त धनराशि न होने के कारण चेक अस्वीकृत हुआ।",
+    "relief": "Complaint under Section 138 of Negotiable Instruments Act.",
+    "local_relief": "परक्राम्य लिखत अधिनियम की धारा 138 के अंतर्गत शिकायत।"
+  }
+]
